@@ -1,0 +1,506 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;  
+}
+
+:root{
+    --bg-color: #e0d3c5;
+    --main-color: #856656;
+    --text-color: #653e2b;
+    --2nd-color: #ebebec;
+    --other-color: #666666;
+    --big-font: 5rem;
+    --h2-font: 2.3rem;
+    --p-font: 1.3rem;
+}
+body{
+    color: var(--text-color);
+    background: var(--bg-color);
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    background: var(--bg-color);
+    box-shadow: 0 1px 6px 0 rgb (32 33 36/10%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 14%;
+    transition:all .50s ease;
+}
+img{
+    height: 6rem;
+    width: 6rem;
+}
+.navbar{
+    display:flex;
+}
+.navbar a{
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 500 ;
+    margin:10px 22px;
+    transition: all .50s ease;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+.h-icons{
+    display: flex;
+    align-items: center;
+}
+.h-icons i{
+    font-size: 25px;
+    color: var(--text-color);
+    margin-left: 5px;
+    margin-right: 20px;
+    transition: all .50s ease;
+}
+.h-icons i:hover{
+    transform: translateY(-4px);
+    color: var(--main-color);
+}
+#menu-icon{
+    height: 30px;
+    width: 30px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    border-radius: 50%;
+    z-index:10001;
+    cursor: pointer;
+    display: none;
+    
+}
+.cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+    margin-right: 10px; /* Added margin to separate "My Cart" from the right */
+}
+  
+.cart{
+    display: flex;
+    align-items: center;
+    margin-right:10px;
+    margin-left: auto;
+}
+  
+.cart p{
+    /*
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background-color: #856656;
+    color: white;*/
+    height: 18px;
+    width: 18px;
+    font-size: 12px;
+    
+}
+/*  
+.container{
+    display: flex;
+    margin-bottom: 30px;
+    margin-top: 5rem;
+    padding-left: 2rem;
+}*/
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-top: 5rem;
+    padding-left: 2rem;
+}
+  
+#root{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.sidebar{
+    padding-left: 20px;
+    margin-left: 1px;
+    align-items: center;
+}
+.place-order a{
+    color: #856656;
+}
+.head {
+    background-color: #856656;
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+  
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #856656;
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 150px;
+    margin-top: 1rem;
+}
+  
+.img-box {
+    width: 100%;
+    height: 100px;
+    /*
+    object-fit: contain;
+    object-position: center;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.images {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+  
+
+  
+.bottom {
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+}
+  
+h2 {
+    font-size: 20px;
+    color: #856656;
+}
+  
+button {
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: brown;
+    padding: 7px 25px;
+    cursor: pointer;
+    color: white;
+}
+  
+button:hover {
+    background-color: #333;
+}
+  
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 10px 10px;
+}
+  
+.row-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid #856656;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.rowing {
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}
+  
+.bx-x:hover {
+    cursor: pointer;
+    color: #333;
+}  
+#contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    align-items: center;
+    gap: 2rem;
+   /*margin-top: 3.5rem;*/
+    text-align: center;
+    background: #e0d3c5;
+}
+.contact-box{
+    margin-bottom: 1rem;
+}
+.contact-box h4{
+    margin-bottom: 1.5rem;
+    font-size: 18px;
+    color: var(--main-color);
+}
+.contact-box li{
+    margin-bottom: 18px;
+}
+.contact-box li a{
+    display: block;
+    color:var(--text-color);
+    font-size: 15px;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+.contact-box li a:hover{
+    transform: translate(-7px);
+    color: var(--main-color);
+}
+.contact-box h5{
+    font-size: 16px;
+    font-weight: 600;
+    color:var(--text-color);
+  
+}
+.social{
+    display: flex;
+    padding-left: 8rem;
+
+}
+.social i{
+    height: 37px;
+    width: 37px;
+    background: transparent;
+    border: 2px solid var(--main-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 1.1rem;
+    color: var(--main-color);
+    transition: all .50s ease;
+}
+.social i:hover{
+    background: var(--main-color);
+    color: var(--bg-color);
+    transform: scale(1.1);
+}
+
+.end-text p{
+    text-align: center;
+    background: #ebebec;
+    color: var(--main-color);
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 20px;
+}
+
+.scrolltop{
+    position: fixed;
+    bottom: 2.3rem;
+    right: 2.3rem;
+    background: var(--main-color);
+    color: var(--bg-color); 
+    font-size: 22px;
+    padding: 12px;
+    border-radius: 30px;
+}
+.scroll-top i{
+    background: var(--color1);
+    color: var(--color2);
+    font-size: 22px;
+    padding: 12px;
+    border-radius: 30px;
+}
+
+@media (max-width: 1200px){
+    header{
+        padding: 12px 3%
+    }
+    section{
+        padding: 40px 3% 50px
+    }
+}
+@media(max-width: 920px){
+    header{
+        padding: 12px 3%;
+    }
+    #menu-icon{
+        display:block;
+        height: 30px;
+        width: 30px;
+        background: var(--text-color);
+        color: var(--bg-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .navbar{
+        position:absolute;
+        top: -800px;
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        background: var(--bg-color);
+        transition: all .50s ease;
+        align-items: center;
+    }
+    .navbar a{
+        display: block;
+        padding: 10px;
+        margin: 5px;
+        font-size: 20px;
+        font-weight: 600;
+        transition: all .50s ease;
+    }
+    .navbar a:hover{
+        color: var(--main-color);
+    }
+    .navbar.active{
+        top: 100%;
+    }
+}
+@media(max-width: 640px){
+    :root{
+        --big-font: 3.8rem;
+        --h2-font: 2rem;
+        --p-font: 1.1rem;
+    }
+    .home-text{
+        line-height:1.1;
+    }
+    .home{
+        height: 85vh;
+    }
+    header {
+        padding: 10px 3%; /* Adjust padding for even smaller screens */
+    }
+    .h-icons {
+        justify-content: space-between;
+    } 
+    .social{
+        padding-left: 6rem;
+    }
+}
+@media(max-width: 640px) {
+    .container {
+        padding-left: 0rem; /* Adjust padding for smaller screens */
+    }
+
+    #root {
+        width: 100%;
+    }
+    .sidebar{
+        margin-top: 2rem;
+    }
+}
+
+
+/* Existing CSS code... 
+
+ Adjust the .container styles for better responsiveness 
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    margin-top: 5rem;
+    padding-left: 2rem;
+}
+
+#root {
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 20px;
+}
+
+/* Adjust the .box styles for better responsiveness 
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #856656;
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 100%;
+    margin-top: 1rem;
+}
+
+.img-box {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Adjust the .cart styles for better responsivenes
+.cart {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.cart p {
+    height: 18px;
+    width: 18px;
+    font-size: 12px;
+}
+
+/* Adjust the button styles for better responsiveness 
+button {
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: brown;
+    padding: 7px 15px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Additional styles to keep "Add to Cart" on the right side 
+.sidebar {
+    margin-left: auto;
+    padding-left: 20px;
+}
+
+/* Existing CSS code... */
